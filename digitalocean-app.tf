@@ -17,7 +17,7 @@ resource "digitalocean_app" "pufferfish" {
                 registry_type = "DOCKER_HUB"
                 registry = "ghcr.io"
                 repository = "pufferfish-app/api"
-                tag = "latest"
+                tag = "main"
             }
 
             env {
