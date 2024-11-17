@@ -30,6 +30,10 @@ resource "digitalocean_app" "pufferfish" {
                 value = var.api_atlas_uri
                 type = "SECRET"
             }
+
+            health_check {
+                port = 80
+            }
         }
     }
 }
