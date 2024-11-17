@@ -15,7 +15,8 @@ resource "digitalocean_app" "pufferfish" {
 
             image {
                 registry_type = "GHCR"
-                repository = "pufferfish-app/api"
+                registry = "pufferfish-app"
+                repository = "api"
                 tag = "main"
             }
 
