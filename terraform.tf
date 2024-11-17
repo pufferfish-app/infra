@@ -4,5 +4,9 @@ terraform {
             source = "mongodb/mongodbatlas"
             version = "~> 1.21"
         }
+        digitalocean = {
+            source = "digitalocean/digitalocean"
+            version = "~> 2.0"
+        }
     }
 }
