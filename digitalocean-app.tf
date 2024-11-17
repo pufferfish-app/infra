@@ -30,6 +30,17 @@ resource "digitalocean_app" "pufferfish" {
                 value = var.api_atlas_uri
                 type = "SECRET"
             }
+
+            env {
+                key = "LLM_BASE_URL"
+                value = var.llm_base_url
+            }
+
+            env {
+                key = "LLM_API_KEY"
+                value = var.llm_api_key
+                type = "SECRET"
+            }
         }
     }
 }
